@@ -7,6 +7,7 @@ import { Planet } from './eg_planet'
 import { Practice_State } from './state'
 import { Practice_useState } from './useStat_exer'
 import Effect_preview from './effect'
+import { Excuse_suggestor } from './state_prac'
 
 //prop: an object to pass aguement to componet
 const WorkersInfo = (info)=>{
@@ -77,62 +78,50 @@ function App() {
 
   const user_names = [{name: 'himxa', age: 12},{name:'perdron', age: 18},{name:'nabil', age: 19}] 
 
-  return (
-    <div>
-   {/* //how to add prop value */}
-   <WorkersInfo name='himxa' salary={15000}  position='senior dev' company ='Asipita'/>
-    <WorkersInfo name='nabil' salary={150}  position='jenour' company ='Asipita'/>
-    <WorkersInfo name='john' salary={20000}  position='junior dev' company ='Asipita'/>
-    <WorkersInfo name='doe' salary={25000}  position='lead dev' company ='Asipita'/>  
+//   return (
+//     <div>
+//    {/* //how to add prop value */}
+//    <WorkersInfo name='himxa' salary={15000}  position='senior dev' company ='Asipita'/>
+//     <WorkersInfo name='nabil' salary={150}  position='jenour' company ='Asipita'/>
+//     <WorkersInfo name='john' salary={20000}  position='junior dev' company ='Asipita'/>
+//     <WorkersInfo name='doe' salary={25000}  position='lead dev' company ='Asipita'/>  
 
 
 
 
   
-    <Condi_Render/>
+//     <Condi_Render/>
 
 
-    {/* second way to condition rendr */}
+//     {/* second way to condition rendr */}
    
-   {/* check beolw to condi
-   tional render css
-    */}
+//    {/* check beolw to condi
+//    tional render css
+//     */}
 
 
-      {age >= 18 ? <h1 style={{color: text_bool? "red" : "green"}}> you can drive</h1>: <h1>you cant drinv</h1>}
+//       {age >= 18 ? <h1 style={{color: text_bool? "red" : "green"}}> you can drive</h1>: <h1>you cant drinv</h1>}
 
 
-{/* third way to conditional render element */}
- {/* this one will on wokr if the bool is true */}
+// {/* third way to conditional render element */}
+//  {/* this one will on wokr if the bool is true */}
 
-{text_bool && <button>yap showing me  </button>}
-
-
-
-
-{/* // we use map to loop true array or object and create UI for them */}
-
-
-{user_names.map((value)=>{
-
-  return (<><h1>{value.name}</h1>
-
-
-    <h2>{value.age}</h2></>
-  )
-})}
+// {text_bool && <button>yap showing me  </button>}
 
 
 
 
+// {/* // we use map to loop true array or object and create UI for them */}
 
 
+// {user_names.map((value)=>{
+
+//   return (<><h1>{value.name}</h1>
 
 
-{/* planet render 
-
-
-<Planet/> */}
+//     <h2>{value.age}</h2></>
+//   )
+// })}
 
 
 
@@ -141,20 +130,42 @@ function App() {
 
 
 
+// {/* planet render 
 
-<Practice_State/>
 
-
-<Practice_useState/>
-
+// <Planet/> */}
 
 
 
 
 
-<Effect_preview/>
-    </div>
-  )
+
+
+
+
+// <Practice_State/>
+
+
+// <Practice_useState/>
+
+
+
+
+
+
+// <Effect_preview/>
+//     </div>
+//   )
+
+
+return(
+
+
+  <>
+
+  <Excuse_suggestor/> 
+  </>
+)
 }
 
 export default App
