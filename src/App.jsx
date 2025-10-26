@@ -4,6 +4,9 @@
 import './App.css'
 import { useState } from 'react'
 import { Planet } from './eg_planet'
+import { Practice_State } from './state'
+import { Practice_useState } from './useStat_exer'
+import Effect_preview from './effect'
 
 //prop: an object to pass aguement to componet
 const WorkersInfo = (info)=>{
@@ -126,13 +129,30 @@ function App() {
 
 
 
-planet render 
+{/* planet render 
 
 
-<Planet/>
+<Planet/> */}
 
 
 
+
+
+
+
+
+
+<Practice_State/>
+
+
+<Practice_useState/>
+
+
+
+
+
+
+<Effect_preview/>
     </div>
   )
 }
