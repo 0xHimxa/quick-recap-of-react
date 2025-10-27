@@ -8,6 +8,7 @@ import { Practice_State } from './state'
 import { Practice_useState } from './useStat_exer'
 import Effect_preview from './effect'
 import { Excuse_suggestor } from './state_prac'
+import { Todo_List } from './todo'
 
 //prop: an object to pass aguement to componet
 const WorkersInfo = (info)=>{
@@ -163,7 +164,12 @@ return(
 
   <>
 
-  <Excuse_suggestor/> 
+  {/* <Excuse_suggestor/>  */}
+
+
+
+
+  <Todo_List/>
   </>
 )
 }
